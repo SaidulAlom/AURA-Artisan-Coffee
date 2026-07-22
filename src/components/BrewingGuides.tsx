@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Sparkles, Timer, Droplets, Scale, Thermometer, Clock, CheckCircle2, ChevronRight, Play, Pause, RotateCcw } from 'lucide-react';
 
@@ -27,7 +27,7 @@ const BREWING_METHODS: MethodGuide[] = [
     grindSize: 'Medium-Fine (Sea Salt Consistency)',
     ratio: '1 : 16 (Coffee to Water)',
     defaultCoffeeGrams: 20,
-    waterTemp: '93°C / 200°F',
+    waterTemp: '93Â°C / 200Â°F',
     brewTime: '3:00 min',
     description: 'Highlights sparkling floral, peach, and citrus notes with crystal-clear cup purity.',
     iconSvg: 'PourOver',
@@ -64,7 +64,7 @@ const BREWING_METHODS: MethodGuide[] = [
     grindSize: 'Coarse (Breadcrumb Consistency)',
     ratio: '1 : 15 (Coffee to Water)',
     defaultCoffeeGrams: 30,
-    waterTemp: '96°C / 205°F',
+    waterTemp: '96Â°C / 205Â°F',
     brewTime: '4:00 min',
     description: 'Full-bodied, velvety extraction with rich chocolate notes and lingering mouthfeel.',
     iconSvg: 'FrenchPress',
@@ -78,7 +78,7 @@ const BREWING_METHODS: MethodGuide[] = [
         title: 'Saturation Pour',
         duration: '0:00 - 0:30',
         instruction: 'Pour 450g of hot water rapidly, ensuring all coffee grounds are fully saturated.',
-        tip: 'No stirring needed yet — let natural convection happen.'
+        tip: 'No stirring needed yet â€” let natural convection happen.'
       },
       {
         title: 'The Four-Minute Steep',
@@ -100,7 +100,7 @@ const BREWING_METHODS: MethodGuide[] = [
     grindSize: 'Fine (Table Salt / Powder)',
     ratio: '1 : 2 (Yield Ratio)',
     defaultCoffeeGrams: 18,
-    waterTemp: '92°C / 198°F',
+    waterTemp: '92Â°C / 198Â°F',
     brewTime: '0:28 sec',
     description: 'Intense micro-extraction with dense golden velvet crema and lingering dark cocoa finish.',
     iconSvg: 'Espresso',
@@ -193,7 +193,7 @@ export default function BrewingGuides() {
   };
 
   return (
-    <section id="guides-section" className="py-20 lg:py-28 bg-[#FFF8F2] relative border-t border-[#F2EDE7]">
+    <section id="guides-section" className="py-20 lg:py-28 bg-[#F9F1E7] relative border-t border-[#E6D2BD]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
@@ -204,16 +204,16 @@ export default function BrewingGuides() {
           transition={{ duration: 0.6, ease: [0.215, 0.61, 0.355, 1] }}
           className="text-center max-w-3xl mx-auto mb-12 space-y-3"
         >
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#F2EDE7] border border-[#FFB703] text-xs font-bold text-[#1F2937]">
-            <Sparkles className="w-3.5 h-3.5 text-[#FF6B35]" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#E6D2BD] border border-[#C89B5C] text-xs font-bold text-[#2A1710]">
+            <Sparkles className="w-3.5 h-3.5 text-[#8B4E2F]" />
             <span>Interactive Barista Academy</span>
           </div>
 
-          <h2 className="font-serif text-3xl sm:text-5xl font-extrabold text-[#1F2937] tracking-tight">
+          <h2 className="font-serif text-3xl sm:text-5xl font-extrabold text-[#2A1710] tracking-tight">
             Precision Brewing Guides
           </h2>
 
-          <p className="text-base text-[#1F2937]/80">
+          <p className="text-base text-[#2A1710]/80">
             Master every extraction. Adjust your coffee dose to calculate exact water ratios, grind sizes, and follow step-by-step timers.
           </p>
         </motion.div>
@@ -237,8 +237,8 @@ export default function BrewingGuides() {
               }}
               className={`px-5 py-3 rounded-2xl text-xs font-bold whitespace-nowrap transition-all duration-200 flex items-center gap-2.5 ${
                 activeMethodId === method.id
-                  ? 'bg-[#FF6B35] text-white shadow-md scale-105'
-                  : 'bg-[#F2EDE7] text-[#1F2937] hover:bg-[#FFB703]/30'
+                  ? 'bg-[#8B4E2F] text-white shadow-md scale-105'
+                  : 'bg-[#E6D2BD] text-[#2A1710] hover:bg-[#C89B5C]/30'
               }`}
               data-cursor
             >
@@ -253,39 +253,39 @@ export default function BrewingGuides() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-60px' }}
           transition={{ duration: 0.7, delay: 0.15, ease: [0.215, 0.61, 0.355, 1] }}
-          className="bg-[#F2EDE7] rounded-3xl p-6 sm:p-10 soft-shadow-lg border border-[#FFF8F2] grid grid-cols-1 lg:grid-cols-12 gap-8 items-start"
+          className="bg-[#E6D2BD] rounded-3xl p-6 sm:p-10 soft-shadow-lg border border-[#F9F1E7] grid grid-cols-1 lg:grid-cols-12 gap-8 items-start"
         >
           
           {/* Left Column: Method Specifications & Interactive Calculator */}
           <div className="lg:col-span-5 space-y-6">
-            <div className="bg-[#FFF8F2] rounded-2xl p-6 soft-shadow space-y-4 border border-[#F2EDE7]">
+            <div className="bg-[#F9F1E7] rounded-2xl p-6 soft-shadow space-y-4 border border-[#E6D2BD]">
               
-              <div className="flex items-center justify-between border-b border-[#F2EDE7] pb-4">
+              <div className="flex items-center justify-between border-b border-[#E6D2BD] pb-4">
                 <div>
-                  <span className="text-[11px] font-bold text-[#FF6B35] uppercase tracking-wider block">
+                  <span className="text-[11px] font-bold text-[#8B4E2F] uppercase tracking-wider block">
                     Brewing Method
                   </span>
-                  <h3 className="font-serif text-2xl font-extrabold text-[#1F2937]">
+                  <h3 className="font-serif text-2xl font-extrabold text-[#2A1710]">
                     {activeMethod.name}
                   </h3>
                 </div>
-                <div className="w-12 h-12 rounded-2xl bg-[#FFB703]/20 flex items-center justify-center text-[#FF6B35]">
+                <div className="w-12 h-12 rounded-2xl bg-[#C89B5C]/20 flex items-center justify-center text-[#8B4E2F]">
                   <Droplets className="w-6 h-6" />
                 </div>
               </div>
 
-              <p className="text-xs text-[#1F2937]/80 leading-relaxed">
+              <p className="text-xs text-[#2A1710]/80 leading-relaxed">
                 {activeMethod.description}
               </p>
 
               {/* Water Ratio Interactive Calculator */}
-              <div className="bg-[#F2EDE7] p-4 rounded-xl space-y-3">
+              <div className="bg-[#E6D2BD] p-4 rounded-xl space-y-3">
                 <div className="flex items-center justify-between">
-                  <span className="text-xs font-bold text-[#1F2937] flex items-center gap-1.5">
-                    <Scale className="w-4 h-4 text-[#FF6B35]" />
+                  <span className="text-xs font-bold text-[#2A1710] flex items-center gap-1.5">
+                    <Scale className="w-4 h-4 text-[#8B4E2F]" />
                     <span>Coffee Dose (Grams)</span>
                   </span>
-                  <span className="font-serif font-extrabold text-sm text-[#FF6B35]">
+                  <span className="font-serif font-extrabold text-sm text-[#8B4E2F]">
                     {customCoffeeGrams}g
                   </span>
                 </div>
@@ -297,38 +297,38 @@ export default function BrewingGuides() {
                   step="1"
                   value={customCoffeeGrams}
                   onChange={(e) => setCustomCoffeeGrams(Number(e.target.value))}
-                  className="w-full accent-[#FF6B35] cursor-pointer"
+                  className="w-full accent-[#8B4E2F] cursor-pointer"
                 />
 
                 <div className="grid grid-cols-2 gap-2 pt-2 text-center text-xs">
-                  <div className="bg-[#FFF8F2] p-2.5 rounded-lg border border-[#1F2937]/5">
-                    <span className="text-[10px] text-[#1F2937]/60 block font-semibold">Water Needed</span>
-                    <span className="font-bold text-[#1F2937] text-sm">{calculatedWater} {activeMethod.id === 'espresso' ? 'g yield' : 'ml'}</span>
+                  <div className="bg-[#F9F1E7] p-2.5 rounded-lg border border-[#2A1710]/5">
+                    <span className="text-[10px] text-[#2A1710]/60 block font-semibold">Water Needed</span>
+                    <span className="font-bold text-[#2A1710] text-sm">{calculatedWater} {activeMethod.id === 'espresso' ? 'g yield' : 'ml'}</span>
                   </div>
-                  <div className="bg-[#FFF8F2] p-2.5 rounded-lg border border-[#1F2937]/5">
-                    <span className="text-[10px] text-[#1F2937]/60 block font-semibold">Target Ratio</span>
-                    <span className="font-bold text-[#FF6B35] text-sm">{activeMethod.ratio}</span>
+                  <div className="bg-[#F9F1E7] p-2.5 rounded-lg border border-[#2A1710]/5">
+                    <span className="text-[10px] text-[#2A1710]/60 block font-semibold">Target Ratio</span>
+                    <span className="font-bold text-[#8B4E2F] text-sm">{activeMethod.ratio}</span>
                   </div>
                 </div>
               </div>
 
               {/* Specs Grid */}
               <div className="grid grid-cols-2 gap-3 text-xs">
-                <div className="p-3 rounded-xl bg-[#F2EDE7]">
-                  <span className="text-[10px] text-[#1F2937]/60 font-semibold block">Grind Size</span>
-                  <span className="font-bold text-[#1F2937]">{activeMethod.grindSize}</span>
+                <div className="p-3 rounded-xl bg-[#E6D2BD]">
+                  <span className="text-[10px] text-[#2A1710]/60 font-semibold block">Grind Size</span>
+                  <span className="font-bold text-[#2A1710]">{activeMethod.grindSize}</span>
                 </div>
 
-                <div className="p-3 rounded-xl bg-[#F2EDE7]">
-                  <span className="text-[10px] text-[#1F2937]/60 font-semibold block">Water Temp</span>
-                  <span className="font-bold text-[#1F2937]">{activeMethod.waterTemp}</span>
+                <div className="p-3 rounded-xl bg-[#E6D2BD]">
+                  <span className="text-[10px] text-[#2A1710]/60 font-semibold block">Water Temp</span>
+                  <span className="font-bold text-[#2A1710]">{activeMethod.waterTemp}</span>
                 </div>
               </div>
 
               {/* Built-in Stopwatch Barista Companion */}
-              <div className="p-4 rounded-xl bg-[#1F2937] text-white flex items-center justify-between">
+              <div className="p-4 rounded-xl bg-[#2A1710] text-white flex items-center justify-between">
                 <div>
-                  <span className="text-[10px] text-[#FFB703] font-extrabold uppercase tracking-wider block">
+                  <span className="text-[10px] text-[#C89B5C] font-extrabold uppercase tracking-wider block">
                     Barista Brew Timer
                   </span>
                   <span className="font-mono text-2xl font-bold tracking-wider">
@@ -339,13 +339,13 @@ export default function BrewingGuides() {
                 <div className="flex items-center gap-2">
                   <button
                     onClick={() => setIsTimerRunning(!isTimerRunning)}
-                    className="p-2.5 rounded-full bg-[#FF6B35] text-white hover:bg-[#FFB703] hover:text-[#1F2937] transition-colors"
+                    className="p-2.5 rounded-full bg-[#8B4E2F] text-white hover:bg-[#C89B5C] hover:text-[#2A1710] transition-colors"
                   >
                     {isTimerRunning ? <Pause className="w-4 h-4" /> : <Play className="w-4 h-4" />}
                   </button>
                   <button
                     onClick={resetTimer}
-                    className="p-2.5 rounded-full bg-[#FFF8F2]/20 text-white hover:bg-[#FFF8F2]/40 transition-colors"
+                    className="p-2.5 rounded-full bg-[#F9F1E7]/20 text-white hover:bg-[#F9F1E7]/40 transition-colors"
                   >
                     <RotateCcw className="w-4 h-4" />
                   </button>
@@ -357,8 +357,8 @@ export default function BrewingGuides() {
 
           {/* Right Column: Step-by-Step Instructions */}
           <div className="lg:col-span-7 space-y-4">
-            <h4 className="font-serif text-xl font-bold text-[#1F2937] flex items-center gap-2">
-              <Clock className="w-5 h-5 text-[#FF6B35]" />
+            <h4 className="font-serif text-xl font-bold text-[#2A1710] flex items-center gap-2">
+              <Clock className="w-5 h-5 text-[#8B4E2F]" />
               <span>Step-by-Step Extraction Sequence</span>
             </h4>
 
@@ -371,8 +371,8 @@ export default function BrewingGuides() {
                     onClick={() => setActiveStepIndex(idx)}
                     className={`p-5 rounded-2xl transition-all cursor-pointer border ${
                       isCurrent
-                        ? 'bg-[#FFF8F2] soft-shadow-lg border-[#FF6B35] scale-[1.01]'
-                        : 'bg-[#FFF8F2]/70 hover:bg-[#FFF8F2] border-transparent'
+                        ? 'bg-[#F9F1E7] soft-shadow-lg border-[#8B4E2F] scale-[1.01]'
+                        : 'bg-[#F9F1E7]/70 hover:bg-[#F9F1E7] border-transparent'
                     }`}
                   >
                     <div className="flex items-start justify-between gap-3">
@@ -380,35 +380,35 @@ export default function BrewingGuides() {
                         <div
                           className={`w-7 h-7 rounded-full text-xs font-bold flex items-center justify-center shrink-0 ${
                             isCurrent
-                              ? 'bg-[#FF6B35] text-white'
-                              : 'bg-[#FFB703] text-[#1F2937]'
+                              ? 'bg-[#8B4E2F] text-white'
+                              : 'bg-[#C89B5C] text-[#2A1710]'
                           }`}
                         >
                           {idx + 1}
                         </div>
 
                         <div>
-                          <h5 className="font-serif text-base font-bold text-[#1F2937]">
+                          <h5 className="font-serif text-base font-bold text-[#2A1710]">
                             {step.title}
                           </h5>
-                          <span className="text-[11px] font-semibold text-[#FF6B35]">
+                          <span className="text-[11px] font-semibold text-[#8B4E2F]">
                             {step.duration}
                           </span>
                         </div>
                       </div>
 
                       {isCurrent && (
-                        <CheckCircle2 className="w-5 h-5 text-[#FF6B35] shrink-0" />
+                        <CheckCircle2 className="w-5 h-5 text-[#8B4E2F] shrink-0" />
                       )}
                     </div>
 
-                    <p className="text-xs text-[#1F2937]/90 mt-2 leading-relaxed font-normal pl-10">
+                    <p className="text-xs text-[#2A1710]/90 mt-2 leading-relaxed font-normal pl-10">
                       {step.instruction}
                     </p>
 
                     {step.tip && (
-                      <div className="mt-2 ml-10 p-2.5 rounded-lg bg-[#F2EDE7] text-[11px] text-[#1F2937] font-medium border-l-2 border-[#FFB703]">
-                        💡 <strong>Pro Tip:</strong> {step.tip}
+                      <div className="mt-2 ml-10 p-2.5 rounded-lg bg-[#E6D2BD] text-[11px] text-[#2A1710] font-medium border-l-2 border-[#C89B5C]">
+                        ðŸ’¡ <strong>Pro Tip:</strong> {step.tip}
                       </div>
                     )}
                   </motion.div>

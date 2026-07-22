@@ -1,4 +1,4 @@
-import { Product, Testimonial, ProcessStep } from '../types';
+﻿import { Product, Testimonial, ProcessStep } from '../types';
 
 export const PRODUCTS: Product[] = [
   {
@@ -15,9 +15,9 @@ export const PRODUCTS: Product[] = [
     elevation: '1,950m - 2,200m',
     process: 'Washed Micro-lot',
     description: 'Directly sourced from the misty high-altitude hills of Yirgacheffe. Complex, tea-like body with vivid notes of jasmine flower, ripe peach, and sparkling lemon zest.',
-    imageBg: '#F3E8DC',
+    imageBg: '#ECD7BD',
     image: '/images/ethiopia-yirgacheffe.jpg',
-    accentColor: '#FF6B35',
+    accentColor: '#8B4E2F',
     badge: 'Micro-Lot',
     isBestSeller: true,
   },
@@ -35,9 +35,9 @@ export const PRODUCTS: Product[] = [
     elevation: '1,800m',
     process: 'Anaerobic Fermentation',
     description: 'A rare natural mutation of Yellow and Red Bourbon beans fermented anaerobically. Explodes with luscious notes of tropical guava, floral wild honey, and silky vanilla.',
-    imageBg: '#FBE8DF',
+    imageBg: '#EFD5C2',
     image: '/images/colombia-pink-bourbon.jpg',
-    accentColor: '#FFB703',
+    accentColor: '#C89B5C',
     badge: 'Rare Varietal',
     isBestSeller: true,
   },
@@ -55,9 +55,9 @@ export const PRODUCTS: Product[] = [
     elevation: '1,400m - 1,700m',
     process: 'Pulp Natural / Washed Blend',
     description: 'Our flagship signature espresso blend. Produces a golden velvet crema with rich cocoa depth, toasted hazelnut sweet notes, and a velvety smooth finish.',
-    imageBg: '#EDE4DC',
+    imageBg: '#E9D8C8',
     image: '/images/velvet-espresso.jpg',
-    accentColor: '#FF6B35',
+    accentColor: '#8B4E2F',
     isBestSeller: true,
   },
   {
@@ -74,9 +74,9 @@ export const PRODUCTS: Product[] = [
     elevation: '1,650m',
     process: '100% Chemical-Free Swiss Water Process',
     description: 'Decaffeinated naturally using mountain water. Delivers 100% of the rich coffee flavor with 0% compromise. Silky, comforting toffee sweetness.',
-    imageBg: '#F5EFE6',
+    imageBg: '#F2E4D4',
     image: '/images/golden-dawn-decaf.jpg',
-    accentColor: '#FFB703',
+    accentColor: '#C89B5C',
     badge: 'Chemical-Free',
   },
   {
@@ -93,9 +93,9 @@ export const PRODUCTS: Product[] = [
     elevation: '1,400m',
     process: 'Giling Basah (Wet-Hulled)',
     description: 'Deep, earthy, and richly aromatic. Grown in volcanic soil near Lake Toba. Full-bodied with comforting layers of cedar wood, warm spice, and dark fruit.',
-    imageBg: '#ECE3DA',
+    imageBg: '#E6D6C7',
     image: '/images/sumatra-lintong.jpg',
-    accentColor: '#1F2937',
+    accentColor: '#2A1710',
   },
   {
     id: 'cold-brew-nitro-concentrate',
@@ -111,9 +111,9 @@ export const PRODUCTS: Product[] = [
     elevation: 'Blend',
     process: '24-Hour Slow Cold Extraction',
     description: 'Ultra-concentrated slow-brewed cold coffee extractions. Simply mix 1:1 with milk or water over ice for an effortlessly smooth, velvety cold brew experience.',
-    imageBg: '#F2EDE7',
+    imageBg: '#E6D2BD',
     image: '/images/cold-brew-nitro.jpg',
-    accentColor: '#FF6B35',
+    accentColor: '#8B4E2F',
     badge: 'Ready to Brew',
   },
   {
@@ -130,14 +130,14 @@ export const PRODUCTS: Product[] = [
     elevation: 'N/A',
     process: 'Laminated 81-Layer Pastry Dough',
     description: 'Golden, ultra-flaky French style butter croissant infused with aromatic green cardamom and filled with rich almond frangipane paste.',
-    imageBg: '#FFF8F2',
+    imageBg: '#F9F1E7',
     image: '/images/cardamom-almond-croissant.jpg',
-    accentColor: '#FFB703',
+    accentColor: '#C89B5C',
     badge: 'Baked Fresh',
   },
   {
     id: 'salted-caramel-canelle',
-    name: 'Bordeaux Salted Caramel Cannelé',
+    name: 'Bordeaux Salted Caramel CannelÃ©',
     tagline: 'Caramelized Crust with Custard Center',
     category: 'pastries',
     price: 5.00,
@@ -149,9 +149,9 @@ export const PRODUCTS: Product[] = [
     elevation: 'N/A',
     process: 'Baked in Copper Molds',
     description: 'Crisp caramelized dark mahogany shell wrapping around a soft, moist custard center infused with Tahitian vanilla and Maldon sea salt.',
-    imageBg: '#FFF8F2',
+    imageBg: '#F9F1E7',
     image: '/images/salted-caramel-canelle.jpg',
-    accentColor: '#FF6B35',
+    accentColor: '#8B4E2F',
   }
 ];
 
@@ -172,7 +172,7 @@ export const PROCESS_STEPS: ProcessStep[] = [
     description: 'Roasted using eco-friendly fluid-bed convection heat that maximizes clarity and locks in delicate floral & fruity aromatic essential oils without smoke bitterness.',
     location: 'Artisan Roastery Lab',
     icon: 'Flame',
-    detailStats: 'Custom Roast Profile Curves Calibrated to 0.1°C Precision'
+    detailStats: 'Custom Roast Profile Curves Calibrated to 0.1Â°C Precision'
   },
   {
     number: 3,
@@ -200,7 +200,7 @@ export const TESTIMONIALS: Testimonial[] = [
     author: 'Elena Rostova',
     role: 'Head Barista & Coffee Educator',
     location: 'San Francisco, CA',
-    comment: 'Aura’s Yirgacheffe is genuinely one of the most expressive washed coffees I have tasted in a decade. The jasmine aromatics practically leap out of the cup when brewed on V60.',
+    comment: 'Auraâ€™s Yirgacheffe is genuinely one of the most expressive washed coffees I have tasted in a decade. The jasmine aromatics practically leap out of the cup when brewed on V60.',
     favoriteBean: 'Yirgacheffe Reserve',
     rating: 5,
     avatarUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=200'
@@ -230,7 +230,7 @@ export const TESTIMONIALS: Testimonial[] = [
     author: 'David Thorne',
     role: 'Sommelier',
     location: 'Austin, TX',
-    comment: 'As a sommelier, I appreciate clarity of terroir. Aura’s roasting highlights the exact soil and elevation characteristics without masking them in charcoal smoke.',
+    comment: 'As a sommelier, I appreciate clarity of terroir. Auraâ€™s roasting highlights the exact soil and elevation characteristics without masking them in charcoal smoke.',
     favoriteBean: 'Sumatra Lintong Eclipse',
     rating: 5,
     avatarUrl: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200'
@@ -241,5 +241,5 @@ export const HERO_STATS = [
   { value: 50000, suffix: '+', label: 'Cups Served Worldwide' },
   { value: 100, suffix: '%', label: 'Direct Trade Farmers' },
   { value: 12, suffix: ' Micro-lots', label: 'Curated Harvests Annually' },
-  { value: 4.9, suffix: '★', label: 'Customer Rating (1,200+ Reviews)' },
+  { value: 4.9, suffix: 'â˜…', label: 'Customer Rating (1,200+ Reviews)' },
 ];

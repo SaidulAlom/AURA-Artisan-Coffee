@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Filter, Search, Sparkles, SlidersHorizontal } from 'lucide-react';
 import { Product } from '../types';
@@ -37,7 +37,7 @@ export default function ProductGrid({ onSelectProduct, onAddToCart }: ProductGri
   });
 
   return (
-    <section id="products-section" className="py-20 lg:py-28 bg-[#F7F3EE]">
+    <section id="products-section" className="py-20 lg:py-28 bg-[#EFE3D2]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
@@ -48,16 +48,16 @@ export default function ProductGrid({ onSelectProduct, onAddToCart }: ProductGri
           transition={{ duration: 0.6, ease: [0.215, 0.61, 0.355, 1] }}
           className="text-center max-w-2xl mx-auto mb-12 space-y-4"
         >
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#FFF8F2] border border-[#FFB703] text-xs font-bold text-[#1F2937]">
-            <Sparkles className="w-3.5 h-3.5 text-[#FF6B35]" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#F9F1E7] border border-[#C89B5C] text-xs font-bold text-[#2A1710]">
+            <Sparkles className="w-3.5 h-3.5 text-[#8B4E2F]" />
             <span>Seasonal Harvest Reserve</span>
           </div>
 
-          <h2 className="font-serif text-3xl sm:text-5xl font-extrabold text-[#1F2937] tracking-tight">
+          <h2 className="font-serif text-3xl sm:text-5xl font-extrabold text-[#2A1710] tracking-tight">
             Curated Single Origins & Signature Blends
           </h2>
 
-          <p className="text-base text-[#1F2937]/80">
+          <p className="text-base text-[#2A1710]/80">
             Hand-selected from high-altitude micro-lots. Roasted to highlight distinct floral, citrus, and cocoa flavor nuances.
           </p>
         </motion.div>
@@ -68,7 +68,7 @@ export default function ProductGrid({ onSelectProduct, onAddToCart }: ProductGri
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-60px' }}
           transition={{ duration: 0.6, delay: 0.1, ease: [0.215, 0.61, 0.355, 1] }}
-          className="bg-[#FFF8F2] p-4 sm:p-6 rounded-3xl soft-shadow border border-[#F2EDE7] mb-12 space-y-4"
+          className="bg-[#F9F1E7] p-4 sm:p-6 rounded-3xl soft-shadow border border-[#E6D2BD] mb-12 space-y-4"
         >
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             
@@ -80,8 +80,8 @@ export default function ProductGrid({ onSelectProduct, onAddToCart }: ProductGri
                   onClick={() => setActiveCategory(cat.id)}
                   className={`px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap transition-all duration-200 ${
                     activeCategory === cat.id
-                      ? 'bg-[#FF6B35] text-white shadow-md'
-                      : 'bg-[#F2EDE7] text-[#1F2937] hover:bg-[#FFB703]/30'
+                      ? 'bg-[#8B4E2F] text-white shadow-md'
+                      : 'bg-[#E6D2BD] text-[#2A1710] hover:bg-[#C89B5C]/30'
                   }`}
                   data-cursor
                 >
@@ -92,13 +92,13 @@ export default function ProductGrid({ onSelectProduct, onAddToCart }: ProductGri
 
             {/* Search Input */}
             <div className="relative w-full md:w-64">
-              <Search className="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-[#1F2937]/50" />
+              <Search className="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-[#2A1710]/50" />
               <input
                 type="text"
                 placeholder="Search notes, origin..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-10 pr-4 py-2 rounded-full bg-[#F2EDE7] text-xs font-medium text-[#1F2937] placeholder-[#1F2937]/50 focus:outline-none focus:ring-2 focus:ring-[#FF6B35]"
+                className="w-full pl-10 pr-4 py-2 rounded-full bg-[#E6D2BD] text-xs font-medium text-[#2A1710] placeholder-[#2A1710]/50 focus:outline-none focus:ring-2 focus:ring-[#8B4E2F]"
               />
             </div>
 
@@ -128,11 +128,11 @@ export default function ProductGrid({ onSelectProduct, onAddToCart }: ProductGri
             </AnimatePresence>
           </div>
         ) : (
-          <div className="text-center py-16 bg-[#FFF8F2] rounded-3xl soft-shadow border border-[#F2EDE7]">
-            <p className="text-lg font-serif font-bold text-[#1F2937]">
+          <div className="text-center py-16 bg-[#F9F1E7] rounded-3xl soft-shadow border border-[#E6D2BD]">
+            <p className="text-lg font-serif font-bold text-[#2A1710]">
               No coffee matches your selected criteria.
             </p>
-            <p className="text-xs text-[#1F2937]/70 mt-1">
+            <p className="text-xs text-[#2A1710]/70 mt-1">
               Try adjusting your search terms or category filters.
             </p>
             <button
@@ -141,7 +141,7 @@ export default function ProductGrid({ onSelectProduct, onAddToCart }: ProductGri
                 setSearchQuery('');
                 setRoastFilter('all');
               }}
-              className="mt-4 px-6 py-2 rounded-full bg-[#FF6B35] text-white text-xs font-bold"
+              className="mt-4 px-6 py-2 rounded-full bg-[#8B4E2F] text-white text-xs font-bold"
             >
               Reset All Filters
             </button>

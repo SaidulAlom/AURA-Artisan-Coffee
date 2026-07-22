@@ -1,35 +1,35 @@
-import React from 'react';
+﻿import React from 'react';
 import { Coffee, ShieldCheck, Heart, Leaf, Award, Globe, Instagram, Twitter, Facebook } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="bg-[#FFF8F2] border-t border-[#F2EDE7] pt-16 pb-12">
+    <footer className="bg-[#F9F1E7] border-t border-[#E6D2BD] pt-16 pb-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Social Proof Badges Bar */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pb-12 border-b border-[#F2EDE7] text-center">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pb-12 border-b border-[#E6D2BD] text-center">
           <div className="flex flex-col items-center gap-2">
-            <ShieldCheck className="w-6 h-6 text-[#FF6B35]" />
-            <span className="text-xs font-bold text-[#1F2937]">Direct Trade Certified</span>
-            <span className="text-[11px] text-[#1F2937]/70">Farmers paid 3.5x Fair Trade</span>
+            <ShieldCheck className="w-6 h-6 text-[#8B4E2F]" />
+            <span className="text-xs font-bold text-[#2A1710]">Direct Trade Certified</span>
+            <span className="text-[11px] text-[#2A1710]/70">Farmers paid 3.5x Fair Trade</span>
           </div>
 
           <div className="flex flex-col items-center gap-2">
-            <Leaf className="w-6 h-6 text-[#FFB703]" />
-            <span className="text-xs font-bold text-[#1F2937]">Zero Carbon Roasting</span>
-            <span className="text-[11px] text-[#1F2937]/70">Eco-convection air technology</span>
+            <Leaf className="w-6 h-6 text-[#C89B5C]" />
+            <span className="text-xs font-bold text-[#2A1710]">Zero Carbon Roasting</span>
+            <span className="text-[11px] text-[#2A1710]/70">Eco-convection air technology</span>
           </div>
 
           <div className="flex flex-col items-center gap-2">
-            <Award className="w-6 h-6 text-[#FF6B35]" />
-            <span className="text-xs font-bold text-[#1F2937]">B-Corp Certified</span>
-            <span className="text-[11px] text-[#1F2937]/70">Highest environmental standard</span>
+            <Award className="w-6 h-6 text-[#8B4E2F]" />
+            <span className="text-xs font-bold text-[#2A1710]">B-Corp Certified</span>
+            <span className="text-[11px] text-[#2A1710]/70">Highest environmental standard</span>
           </div>
 
           <div className="flex flex-col items-center gap-2">
-            <Globe className="w-6 h-6 text-[#FFB703]" />
-            <span className="text-xs font-bold text-[#1F2937]">Compostable Packaging</span>
-            <span className="text-[11px] text-[#1F2937]/70">100% plastic-free tactile bags</span>
+            <Globe className="w-6 h-6 text-[#C89B5C]" />
+            <span className="text-xs font-bold text-[#2A1710]">Compostable Packaging</span>
+            <span className="text-[11px] text-[#2A1710]/70">100% plastic-free tactile bags</span>
           </div>
         </div>
 
@@ -38,55 +38,55 @@ export default function Footer() {
           
           <div className="md:col-span-5 space-y-4">
             <div className="flex items-center gap-2.5">
-              <div className="w-10 h-10 rounded-full bg-[#FF6B35] flex items-center justify-center text-white">
+              <div className="w-10 h-10 rounded-full bg-[#8B4E2F] flex items-center justify-center text-white">
                 <Coffee className="w-5 h-5 stroke-[2.2]" />
               </div>
-              <span className="font-serif text-2xl font-bold tracking-tight text-[#1F2937]">
+              <span className="font-serif text-2xl font-bold tracking-tight text-[#2A1710]">
                 AURA ARTISAN COFFEE
               </span>
             </div>
 
-            <p className="text-xs text-[#1F2937]/80 max-w-sm leading-relaxed">
+            <p className="text-xs text-[#2A1710]/80 max-w-sm leading-relaxed">
               Elevating daily morning rituals through tactile 3D design, high-altitude micro-lot coffee beans, and transparent direct-trade sourcing.
             </p>
 
             {/* Social Icons */}
             <div className="flex items-center gap-3 pt-2">
-              <a href="#instagram" className="p-2 rounded-full bg-[#F2EDE7] text-[#1F2937] hover:bg-[#FF6B35] hover:text-white transition-colors">
+              <a href="#instagram" className="p-2 rounded-full bg-[#E6D2BD] text-[#2A1710] hover:bg-[#8B4E2F] hover:text-white transition-colors">
                 <Instagram className="w-4 h-4" />
               </a>
-              <a href="#twitter" className="p-2 rounded-full bg-[#F2EDE7] text-[#1F2937] hover:bg-[#FF6B35] hover:text-white transition-colors">
+              <a href="#twitter" className="p-2 rounded-full bg-[#E6D2BD] text-[#2A1710] hover:bg-[#8B4E2F] hover:text-white transition-colors">
                 <Twitter className="w-4 h-4" />
               </a>
-              <a href="#facebook" className="p-2 rounded-full bg-[#F2EDE7] text-[#1F2937] hover:bg-[#FF6B35] hover:text-white transition-colors">
+              <a href="#facebook" className="p-2 rounded-full bg-[#E6D2BD] text-[#2A1710] hover:bg-[#8B4E2F] hover:text-white transition-colors">
                 <Facebook className="w-4 h-4" />
               </a>
             </div>
           </div>
 
           <div className="md:col-span-2 space-y-3">
-            <h4 className="font-serif text-sm font-bold text-[#1F2937]">Shop Reserve</h4>
-            <ul className="space-y-2 text-xs text-[#1F2937]/80">
-              <li><a href="#products-section" className="hover:text-[#FF6B35]">Single Origin Beans</a></li>
-              <li><a href="#products-section" className="hover:text-[#FF6B35]">Velvet Espresso Blend</a></li>
-              <li><a href="#products-section" className="hover:text-[#FF6B35]">Swiss Water Decaf</a></li>
-              <li><a href="#products-section" className="hover:text-[#FF6B35]">Cold Brew Extracts</a></li>
+            <h4 className="font-serif text-sm font-bold text-[#2A1710]">Shop Reserve</h4>
+            <ul className="space-y-2 text-xs text-[#2A1710]/80">
+              <li><a href="#products-section" className="hover:text-[#8B4E2F]">Single Origin Beans</a></li>
+              <li><a href="#products-section" className="hover:text-[#8B4E2F]">Velvet Espresso Blend</a></li>
+              <li><a href="#products-section" className="hover:text-[#8B4E2F]">Swiss Water Decaf</a></li>
+              <li><a href="#products-section" className="hover:text-[#8B4E2F]">Cold Brew Extracts</a></li>
             </ul>
           </div>
 
           <div className="md:col-span-2 space-y-3">
-            <h4 className="font-serif text-sm font-bold text-[#1F2937]">Our Mission</h4>
-            <ul className="space-y-2 text-xs text-[#1F2937]/80">
-              <li><a href="#story-section" className="hover:text-[#FF6B35]">Sourcing Transparency</a></li>
-              <li><a href="#story-section" className="hover:text-[#FF6B35]">Fluid Bed Roasting</a></li>
-              <li><a href="#reviews-section" className="hover:text-[#FF6B35]">Customer Stories</a></li>
-              <li><a href="#stats-section" className="hover:text-[#FF6B35]">Roastery Impact</a></li>
+            <h4 className="font-serif text-sm font-bold text-[#2A1710]">Our Mission</h4>
+            <ul className="space-y-2 text-xs text-[#2A1710]/80">
+              <li><a href="#story-section" className="hover:text-[#8B4E2F]">Sourcing Transparency</a></li>
+              <li><a href="#story-section" className="hover:text-[#8B4E2F]">Fluid Bed Roasting</a></li>
+              <li><a href="#reviews-section" className="hover:text-[#8B4E2F]">Customer Stories</a></li>
+              <li><a href="#stats-section" className="hover:text-[#8B4E2F]">Roastery Impact</a></li>
             </ul>
           </div>
 
           <div className="md:col-span-3 space-y-3">
-            <h4 className="font-serif text-sm font-bold text-[#1F2937]">Artisan Roastery Lab</h4>
-            <p className="text-xs text-[#1F2937]/80">
+            <h4 className="font-serif text-sm font-bold text-[#2A1710]">Artisan Roastery Lab</h4>
+            <p className="text-xs text-[#2A1710]/80">
               450 Coffee Micro-Lot Way, Suite 100<br />
               Seattle, WA 98101<br />
               hello@auraartisancoffee.com
@@ -96,12 +96,12 @@ export default function Footer() {
         </div>
 
         {/* Bottom Copyright */}
-        <div className="pt-8 border-t border-[#F2EDE7] flex flex-col sm:flex-row items-center justify-between text-xs text-[#1F2937]/60 gap-4">
-          <p>© {new Date().getFullYear()} Aura Artisan Coffee Roasters. All rights reserved.</p>
+        <div className="pt-8 border-t border-[#E6D2BD] flex flex-col sm:flex-row items-center justify-between text-xs text-[#2A1710]/60 gap-4">
+          <p>Â© {new Date().getFullYear()} Aura Artisan Coffee Roasters. All rights reserved.</p>
           <div className="flex gap-6">
-            <a href="#privacy" className="hover:text-[#FF6B35]">Privacy Policy</a>
-            <a href="#terms" className="hover:text-[#FF6B35]">Terms of Service</a>
-            <a href="#shipping" className="hover:text-[#FF6B35]">Shipping & Returns</a>
+            <a href="#privacy" className="hover:text-[#8B4E2F]">Privacy Policy</a>
+            <a href="#terms" className="hover:text-[#8B4E2F]">Terms of Service</a>
+            <a href="#shipping" className="hover:text-[#8B4E2F]">Shipping & Returns</a>
           </div>
         </div>
 

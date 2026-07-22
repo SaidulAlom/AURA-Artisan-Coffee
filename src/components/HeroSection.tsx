@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { motion, AnimatePresence, type Variants } from 'motion/react';
 import { ArrowRight, Sparkles, ShieldCheck, Flame, Bean, Award, Droplets, MapPin, Compass, CheckCircle2 } from 'lucide-react';
 
@@ -34,8 +34,8 @@ const FEATURED_HARVESTS: HeroProductCard[] = [
     roastFill: 35,
     notes: ['Jasmine Floral', 'Crisp White Peach', 'Bergamot Zest'],
     bagsLeft: 28,
-    bgGradient: 'from-[#FFF8F2] via-[#FFF3EB] to-[#F2EDE7]',
-    accentColor: '#FF6B35',
+    bgGradient: 'from-[#F9F1E7] via-[#F4E6D6] to-[#E6D2BD]',
+    accentColor: '#8B4E2F',
   },
   {
     id: 'guatemala-huehue',
@@ -48,8 +48,8 @@ const FEATURED_HARVESTS: HeroProductCard[] = [
     roastFill: 55,
     notes: ['Dark Chocolate', 'Blood Orange', 'Raw Sugar'],
     bagsLeft: 42,
-    bgGradient: 'from-[#FFF8F2] via-[#FEF7EA] to-[#F2EDE7]',
-    accentColor: '#FFB703',
+    bgGradient: 'from-[#F9F1E7] via-[#F3E3CD] to-[#E6D2BD]',
+    accentColor: '#C89B5C',
   },
   {
     id: 'colombia-pink-bourbon',
@@ -62,8 +62,8 @@ const FEATURED_HARVESTS: HeroProductCard[] = [
     roastFill: 25,
     notes: ['Wild Strawberry', 'Pink Grapefruit', 'Honeyed Rose'],
     bagsLeft: 16,
-    bgGradient: 'from-[#FFF8F2] via-[#FFF0EC] to-[#F2EDE7]',
-    accentColor: '#FF6B35',
+    bgGradient: 'from-[#F9F1E7] via-[#EFD8C6] to-[#E6D2BD]',
+    accentColor: '#8B4E2F',
   },
 ];
 
@@ -93,21 +93,21 @@ export default function HeroSection({ onShopClick, onStoryClick }: HeroSectionPr
       
       {/* Refined Minimalist Background Architecture (No 3D) */}
       {/* Soft Ambient Light Blobs */}
-      <div className="absolute top-1/4 left-10 w-96 h-96 bg-[#FFB703]/10 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-10 right-10 w-[500px] h-[500px] bg-[#FF6B35]/08 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-1/4 left-10 w-96 h-96 bg-[#C89B5C]/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-10 right-10 w-[500px] h-[500px] bg-[#8B4E2F]/08 rounded-full blur-3xl pointer-events-none" />
 
       {/* Abstract Architectural SVG Grid Lines & Warm Concentric Arches */}
       <div className="absolute inset-0 pointer-events-none opacity-40">
         <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <pattern id="hero-grid-pattern" width="60" height="60" patternUnits="userSpaceOnUse">
-              <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#1F2937" strokeWidth="0.5" strokeOpacity="0.05" />
+              <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#2A1710" strokeWidth="0.5" strokeOpacity="0.05" />
             </pattern>
           </defs>
           <rect width="100%" height="100%" fill="url(#hero-grid-pattern)" />
           {/* Subtle Accent Concentric Arches on the right side */}
-          <circle cx="85%" cy="50%" r="320" fill="none" stroke="#FFB703" strokeWidth="1" strokeDasharray="6 6" opacity="0.25" />
-          <circle cx="85%" cy="50%" r="220" fill="none" stroke="#FF6B35" strokeWidth="1" opacity="0.15" />
+          <circle cx="85%" cy="50%" r="320" fill="none" stroke="#C89B5C" strokeWidth="1" strokeDasharray="6 6" opacity="0.25" />
+          <circle cx="85%" cy="50%" r="220" fill="none" stroke="#8B4E2F" strokeWidth="1" opacity="0.15" />
         </svg>
       </div>
 
@@ -122,11 +122,11 @@ export default function HeroSection({ onShopClick, onStoryClick }: HeroSectionPr
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-[#FFF8F2] border border-[#FFB703]/40 text-[#1F2937] text-xs font-bold shadow-sm"
+              className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-[#F9F1E7] border border-[#C89B5C]/40 text-[#2A1710] text-xs font-bold shadow-sm"
             >
-              <span className="w-2 h-2 rounded-full bg-[#FF6B35] animate-ping" />
-              <Sparkles className="w-3.5 h-3.5 text-[#FF6B35]" />
-              <span>Small-Batch Micro-Lot Harvests · Roasted Fresh Daily</span>
+              <span className="w-2 h-2 rounded-full bg-[#8B4E2F] animate-ping" />
+              <Sparkles className="w-3.5 h-3.5 text-[#8B4E2F]" />
+              <span>Small-Batch Micro-Lot Harvests Â· Roasted Fresh Daily</span>
             </motion.div>
 
             {/* Main Headline */}
@@ -137,7 +137,7 @@ export default function HeroSection({ onShopClick, onStoryClick }: HeroSectionPr
                   initial="hidden"
                   animate="visible"
                   variants={lineVariants}
-                  className="font-serif text-4xl sm:text-6xl lg:text-7xl font-extrabold text-[#1F2937] tracking-tight leading-[1.08]"
+                  className="font-serif text-4xl sm:text-6xl lg:text-7xl font-extrabold text-[#2A1710] tracking-tight leading-[1.08]"
                 >
                   Tactile Motion.
                 </motion.h1>
@@ -149,7 +149,7 @@ export default function HeroSection({ onShopClick, onStoryClick }: HeroSectionPr
                   initial="hidden"
                   animate="visible"
                   variants={lineVariants}
-                  className="font-serif text-4xl sm:text-6xl lg:text-7xl font-extrabold text-[#FF6B35] tracking-tight leading-[1.08]"
+                  className="font-serif text-4xl sm:text-6xl lg:text-7xl font-extrabold text-[#8B4E2F] tracking-tight leading-[1.08]"
                 >
                   Artisanal Coffee.
                 </motion.h1>
@@ -161,7 +161,7 @@ export default function HeroSection({ onShopClick, onStoryClick }: HeroSectionPr
                   initial="hidden"
                   animate="visible"
                   variants={lineVariants}
-                  className="text-base sm:text-lg text-[#1F2937]/80 font-normal max-w-xl pt-3 leading-relaxed"
+                  className="text-base sm:text-lg text-[#2A1710]/80 font-normal max-w-xl pt-3 leading-relaxed"
                 >
                   Experience direct-trade, single-origin beans roasted with zero-emissions convection heat. Pure floral clarity, rich velvet crema, delivered to your doorstep within 48 hours.
                 </motion.p>
@@ -178,25 +178,25 @@ export default function HeroSection({ onShopClick, onStoryClick }: HeroSectionPr
               {/* Primary CTA button */}
               <button
                 onClick={onShopClick}
-                className="relative group px-8 py-4 rounded-full bg-[#FF6B35] text-white font-bold text-base shadow-md hover:shadow-lg hover:scale-[1.02] active:scale-98 transition-all duration-300 flex items-center gap-3 overflow-hidden"
+                className="relative group px-8 py-4 rounded-full bg-[#8B4E2F] text-white font-bold text-base shadow-md hover:shadow-lg hover:scale-[1.02] active:scale-98 transition-all duration-300 flex items-center gap-3 overflow-hidden"
                 data-cursor
                 data-cursor-text="Explore"
               >
-                <span className="absolute inset-0 w-full h-full bg-[#FFB703] transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out -z-0" />
-                <span className="relative z-10 group-hover:text-[#1F2937] transition-colors">
+                <span className="absolute inset-0 w-full h-full bg-[#C89B5C] transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out -z-0" />
+                <span className="relative z-10 group-hover:text-[#2A1710] transition-colors">
                   Shop Fresh Harvests
                 </span>
-                <ArrowRight className="w-5 h-5 relative z-10 group-hover:translate-x-1 group-hover:text-[#1F2937] transition-all" />
+                <ArrowRight className="w-5 h-5 relative z-10 group-hover:translate-x-1 group-hover:text-[#2A1710] transition-all" />
               </button>
 
               {/* Secondary text button */}
               <button
                 onClick={onStoryClick}
-                className="relative py-2 px-4 text-base font-bold text-[#1F2937] hover:text-[#FF6B35] transition-colors group flex items-center gap-2"
+                className="relative py-2 px-4 text-base font-bold text-[#2A1710] hover:text-[#8B4E2F] transition-colors group flex items-center gap-2"
                 data-cursor
               >
                 <span>Explore Sourcing Story</span>
-                <span className="absolute bottom-0 left-4 right-4 h-0.5 bg-[#FFB703] transition-transform duration-300 group-hover:scale-x-105" />
+                <span className="absolute bottom-0 left-4 right-4 h-0.5 bg-[#C89B5C] transition-transform duration-300 group-hover:scale-x-105" />
               </button>
             </motion.div>
 
@@ -205,19 +205,19 @@ export default function HeroSection({ onShopClick, onStoryClick }: HeroSectionPr
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.7 }}
-              className="grid grid-cols-3 gap-3 pt-6 border-t border-[#1F2937]/10"
+              className="grid grid-cols-3 gap-3 pt-6 border-t border-[#2A1710]/10"
             >
               <div className="flex items-center gap-2">
-                <Flame className="w-4 h-4 text-[#FF6B35] shrink-0" />
-                <span className="text-xs font-semibold text-[#1F2937]/90">Roasted Fresh Daily</span>
+                <Flame className="w-4 h-4 text-[#8B4E2F] shrink-0" />
+                <span className="text-xs font-semibold text-[#2A1710]/90">Roasted Fresh Daily</span>
               </div>
               <div className="flex items-center gap-2">
-                <ShieldCheck className="w-4 h-4 text-[#FFB703] shrink-0" />
-                <span className="text-xs font-semibold text-[#1F2937]/90">Direct Trade Certified</span>
+                <ShieldCheck className="w-4 h-4 text-[#C89B5C] shrink-0" />
+                <span className="text-xs font-semibold text-[#2A1710]/90">Direct Trade Certified</span>
               </div>
               <div className="flex items-center gap-2">
-                <Bean className="w-4 h-4 text-[#FF6B35] shrink-0" />
-                <span className="text-xs font-semibold text-[#1F2937]/90">Nitrogen Sealed Fresh</span>
+                <Bean className="w-4 h-4 text-[#8B4E2F] shrink-0" />
+                <span className="text-xs font-semibold text-[#2A1710]/90">Nitrogen Sealed Fresh</span>
               </div>
             </motion.div>
 
@@ -240,8 +240,8 @@ export default function HeroSection({ onShopClick, onStoryClick }: HeroSectionPr
                     onClick={() => setActiveHarvestId(harvest.id)}
                     className={`px-3.5 py-1.5 rounded-full text-xs font-bold transition-all duration-200 whitespace-nowrap flex items-center gap-1.5 ${
                       activeHarvestId === harvest.id
-                        ? 'bg-[#FF6B35] text-white shadow-sm scale-105'
-                        : 'bg-[#FFF8F2] text-[#1F2937]/80 hover:bg-[#F2EDE7] border border-[#1F2937]/5'
+                        ? 'bg-[#8B4E2F] text-white shadow-sm scale-105'
+                        : 'bg-[#F9F1E7] text-[#2A1710]/80 hover:bg-[#E6D2BD] border border-[#2A1710]/5'
                     }`}
                     data-cursor
                   >
@@ -258,30 +258,30 @@ export default function HeroSection({ onShopClick, onStoryClick }: HeroSectionPr
                   animate={{ opacity: 1, scale: 1, y: 0 }}
                   exit={{ opacity: 0, scale: 0.97, y: -15 }}
                   transition={{ duration: 0.35, ease: 'easeOut' }}
-                  className={`bg-gradient-to-br ${activeHarvest.bgGradient} rounded-3xl p-6 sm:p-8 soft-shadow-lg border border-[#FFF8F2] relative overflow-hidden`}
+                  className={`bg-gradient-to-br ${activeHarvest.bgGradient} rounded-3xl p-6 sm:p-8 soft-shadow-lg border border-[#F9F1E7] relative overflow-hidden`}
                 >
                   
                   {/* Top Header Row */}
                   <div className="flex items-start justify-between gap-4 mb-6">
                     <div>
-                      <div className="flex items-center gap-2 text-xs font-bold text-[#FF6B35] uppercase tracking-wider mb-1">
+                      <div className="flex items-center gap-2 text-xs font-bold text-[#8B4E2F] uppercase tracking-wider mb-1">
                         <MapPin className="w-3.5 h-3.5" />
                         <span>{activeHarvest.origin}</span>
                       </div>
-                      <h3 className="font-serif text-2xl sm:text-3xl font-extrabold text-[#1F2937]">
+                      <h3 className="font-serif text-2xl sm:text-3xl font-extrabold text-[#2A1710]">
                         {activeHarvest.name}
                       </h3>
                     </div>
 
                     {/* Score Badge */}
-                    <div className="bg-[#FFF8F2] p-2.5 rounded-2xl soft-shadow border border-[#FFB703]/30 text-center shrink-0">
-                      <div className="flex items-center justify-center gap-1 text-[#FFB703]">
-                        <Award className="w-4 h-4 fill-[#FFB703]" />
-                        <span className="font-mono text-base font-extrabold text-[#1F2937]">
+                    <div className="bg-[#F9F1E7] p-2.5 rounded-2xl soft-shadow border border-[#C89B5C]/30 text-center shrink-0">
+                      <div className="flex items-center justify-center gap-1 text-[#C89B5C]">
+                        <Award className="w-4 h-4 fill-[#C89B5C]" />
+                        <span className="font-mono text-base font-extrabold text-[#2A1710]">
                           {activeHarvest.score}
                         </span>
                       </div>
-                      <span className="text-[10px] font-bold text-[#1F2937]/60 block uppercase">
+                      <span className="text-[10px] font-bold text-[#2A1710]/60 block uppercase">
                         SCA Score
                       </span>
                     </div>
@@ -289,16 +289,16 @@ export default function HeroSection({ onShopClick, onStoryClick }: HeroSectionPr
 
                   {/* Flavor Profile Tasting Chips */}
                   <div className="space-y-2 mb-6">
-                    <span className="text-[11px] font-bold text-[#1F2937]/70 uppercase tracking-wider block">
+                    <span className="text-[11px] font-bold text-[#2A1710]/70 uppercase tracking-wider block">
                       Tasting Aromas & Notes
                     </span>
                     <div className="flex flex-wrap gap-2">
                       {activeHarvest.notes.map((note, idx) => (
                         <span
                           key={idx}
-                          className="px-3 py-1.5 rounded-xl bg-[#FFF8F2] text-[#1F2937] text-xs font-bold border border-[#F2EDE7] shadow-xs flex items-center gap-1.5"
+                          className="px-3 py-1.5 rounded-xl bg-[#F9F1E7] text-[#2A1710] text-xs font-bold border border-[#E6D2BD] shadow-xs flex items-center gap-1.5"
                         >
-                          <Droplets className="w-3 h-3 text-[#FF6B35]" />
+                          <Droplets className="w-3 h-3 text-[#8B4E2F]" />
                           {note}
                         </span>
                       ))}
@@ -307,46 +307,46 @@ export default function HeroSection({ onShopClick, onStoryClick }: HeroSectionPr
 
                   {/* Specs Grid */}
                   <div className="grid grid-cols-2 gap-3 mb-6 text-xs">
-                    <div className="bg-[#FFF8F2]/80 p-3 rounded-2xl border border-[#F2EDE7]">
-                      <span className="text-[10px] text-[#1F2937]/60 font-semibold block">Processing</span>
-                      <span className="font-bold text-[#1F2937]">{activeHarvest.process}</span>
+                    <div className="bg-[#F9F1E7]/80 p-3 rounded-2xl border border-[#E6D2BD]">
+                      <span className="text-[10px] text-[#2A1710]/60 font-semibold block">Processing</span>
+                      <span className="font-bold text-[#2A1710]">{activeHarvest.process}</span>
                     </div>
-                    <div className="bg-[#FFF8F2]/80 p-3 rounded-2xl border border-[#F2EDE7]">
-                      <span className="text-[10px] text-[#1F2937]/60 font-semibold block">Altitude</span>
-                      <span className="font-bold text-[#1F2937]">{activeHarvest.altitude}</span>
+                    <div className="bg-[#F9F1E7]/80 p-3 rounded-2xl border border-[#E6D2BD]">
+                      <span className="text-[10px] text-[#2A1710]/60 font-semibold block">Altitude</span>
+                      <span className="font-bold text-[#2A1710]">{activeHarvest.altitude}</span>
                     </div>
                   </div>
 
                   {/* Roast Level Bar */}
-                  <div className="bg-[#FFF8F2] p-3.5 rounded-2xl border border-[#F2EDE7] space-y-2 mb-6">
+                  <div className="bg-[#F9F1E7] p-3.5 rounded-2xl border border-[#E6D2BD] space-y-2 mb-6">
                     <div className="flex justify-between items-center text-xs">
-                      <span className="font-bold text-[#1F2937] flex items-center gap-1.5">
-                        <Flame className="w-3.5 h-3.5 text-[#FF6B35]" />
+                      <span className="font-bold text-[#2A1710] flex items-center gap-1.5">
+                        <Flame className="w-3.5 h-3.5 text-[#8B4E2F]" />
                         <span>Roast Profile</span>
                       </span>
-                      <span className="font-bold text-[#FF6B35] text-xs">{activeHarvest.roastLevel}</span>
+                      <span className="font-bold text-[#8B4E2F] text-xs">{activeHarvest.roastLevel}</span>
                     </div>
 
-                    <div className="w-full bg-[#F2EDE7] h-2 rounded-full overflow-hidden">
+                    <div className="w-full bg-[#E6D2BD] h-2 rounded-full overflow-hidden">
                       <motion.div
                         initial={{ width: 0 }}
                         animate={{ width: `${activeHarvest.roastFill}%` }}
                         transition={{ duration: 0.8, ease: 'easeOut' }}
-                        className="h-full bg-gradient-to-r from-[#FFB703] to-[#FF6B35] rounded-full"
+                        className="h-full bg-gradient-to-r from-[#C89B5C] to-[#8B4E2F] rounded-full"
                       />
                     </div>
                   </div>
 
                   {/* Action Row */}
                   <div className="flex items-center justify-between pt-2">
-                    <div className="flex items-center gap-1.5 text-xs text-[#1F2937]/80 font-medium">
-                      <CheckCircle2 className="w-4 h-4 text-[#FF6B35]" />
+                    <div className="flex items-center gap-1.5 text-xs text-[#2A1710]/80 font-medium">
+                      <CheckCircle2 className="w-4 h-4 text-[#8B4E2F]" />
                       <span><strong>{activeHarvest.bagsLeft} bags</strong> remaining in batch</span>
                     </div>
 
                     <button
                       onClick={onShopClick}
-                      className="px-4 py-2 rounded-full bg-[#1F2937] text-white text-xs font-bold hover:bg-[#FF6B35] transition-colors flex items-center gap-1.5"
+                      className="px-4 py-2 rounded-full bg-[#2A1710] text-white text-xs font-bold hover:bg-[#8B4E2F] transition-colors flex items-center gap-1.5"
                       data-cursor
                     >
                       <span>Reserve Lot</span>
@@ -362,10 +362,10 @@ export default function HeroSection({ onShopClick, onStoryClick }: HeroSectionPr
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.6 }}
-                className="absolute -bottom-4 -right-2 sm:right-4 bg-[#FFF8F2] px-4 py-2 rounded-2xl soft-shadow border border-[#FFB703]/40 flex items-center gap-2.5 z-20 pointer-events-none"
+                className="absolute -bottom-4 -right-2 sm:right-4 bg-[#F9F1E7] px-4 py-2 rounded-2xl soft-shadow border border-[#C89B5C]/40 flex items-center gap-2.5 z-20 pointer-events-none"
               >
-                <div className="w-3 h-3 rounded-full bg-[#FF6B35] animate-ping" />
-                <span className="text-xs font-extrabold text-[#1F2937]">Roaster's Choice · Fresh Batch</span>
+                <div className="w-3 h-3 rounded-full bg-[#8B4E2F] animate-ping" />
+                <span className="text-xs font-extrabold text-[#2A1710]">Roaster's Choice Â· Fresh Batch</span>
               </motion.div>
 
             </motion.div>

@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+﻿import React, { useRef } from 'react';
 import { motion } from 'motion/react';
 import { TESTIMONIALS } from '../data/mockData';
 import { Star, Quote, ChevronLeft, ChevronRight, CheckCircle2 } from 'lucide-react';
@@ -14,7 +14,7 @@ export default function TestimonialsSection() {
   };
 
   return (
-    <section id="reviews-section" className="py-20 lg:py-28 bg-[#F7F3EE] overflow-hidden">
+    <section id="reviews-section" className="py-20 lg:py-28 bg-[#EFE3D2] overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Title & Navigation Buttons */}
@@ -26,11 +26,11 @@ export default function TestimonialsSection() {
           className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12"
         >
           <div>
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#FFF8F2] border border-[#FFB703] text-xs font-bold text-[#1F2937] mb-3">
-              <Star className="w-3.5 h-3.5 fill-[#FFB703] text-[#FFB703]" />
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#F9F1E7] border border-[#C89B5C] text-xs font-bold text-[#2A1710] mb-3">
+              <Star className="w-3.5 h-3.5 fill-[#C89B5C] text-[#C89B5C]" />
               <span>1,200+ Verified 5-Star Reviews</span>
             </div>
-            <h2 className="font-serif text-3xl sm:text-5xl font-extrabold text-[#1F2937] tracking-tight">
+            <h2 className="font-serif text-3xl sm:text-5xl font-extrabold text-[#2A1710] tracking-tight">
               Loved by Coffee Connoisseurs
             </h2>
           </div>
@@ -39,7 +39,7 @@ export default function TestimonialsSection() {
           <div className="flex items-center gap-3">
             <button
               onClick={() => scroll('left')}
-              className="p-3 rounded-full bg-[#FFF8F2] border border-[#1F2937]/10 text-[#1F2937] hover:bg-[#FF6B35] hover:text-white transition-all soft-shadow"
+              className="p-3 rounded-full bg-[#F9F1E7] border border-[#2A1710]/10 text-[#2A1710] hover:bg-[#8B4E2F] hover:text-white transition-all soft-shadow"
               aria-label="Previous Testimonial"
               data-cursor
             >
@@ -47,7 +47,7 @@ export default function TestimonialsSection() {
             </button>
             <button
               onClick={() => scroll('right')}
-              className="p-3 rounded-full bg-[#FFF8F2] border border-[#1F2937]/10 text-[#1F2937] hover:bg-[#FF6B35] hover:text-white transition-all soft-shadow"
+              className="p-3 rounded-full bg-[#F9F1E7] border border-[#2A1710]/10 text-[#2A1710] hover:bg-[#8B4E2F] hover:text-white transition-all soft-shadow"
               aria-label="Next Testimonial"
               data-cursor
             >
@@ -56,7 +56,7 @@ export default function TestimonialsSection() {
           </div>
         </motion.div>
 
-        {/* Drag-to-scroll Card Carousel in #FFF8F2 */}
+        {/* Drag-to-scroll Card Carousel in #F9F1E7 */}
         <motion.div
           ref={scrollRef}
           initial={{ opacity: 0, y: 40 }}
@@ -72,33 +72,33 @@ export default function TestimonialsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: idx * 0.1 }}
-              className="w-[320px] sm:w-[380px] shrink-0 snap-start bg-[#FFF8F2] rounded-3xl p-6 sm:p-8 soft-shadow border border-[#F2EDE7] flex flex-col justify-between relative group hover:-translate-y-1 transition-transform duration-300"
+              className="w-[320px] sm:w-[380px] shrink-0 snap-start bg-[#F9F1E7] rounded-3xl p-6 sm:p-8 soft-shadow border border-[#E6D2BD] flex flex-col justify-between relative group hover:-translate-y-1 transition-transform duration-300"
             >
-              {/* Small #FF6B35 quotation mark accent */}
-              <div className="absolute top-6 right-6 p-2 rounded-full bg-[#F2EDE7]">
-                <Quote className="w-5 h-5 text-[#FF6B35] fill-[#FF6B35]" />
+              {/* Small #8B4E2F quotation mark accent */}
+              <div className="absolute top-6 right-6 p-2 rounded-full bg-[#E6D2BD]">
+                <Quote className="w-5 h-5 text-[#8B4E2F] fill-[#8B4E2F]" />
               </div>
 
               <div>
-                {/* Rating Stars in #FFB703 */}
+                {/* Rating Stars in #C89B5C */}
                 <div className="flex items-center gap-1 mb-4">
                   {[...Array(t.rating)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-[#FFB703] text-[#FFB703]" />
+                    <Star key={i} className="w-4 h-4 fill-[#C89B5C] text-[#C89B5C]" />
                   ))}
                 </div>
 
-                <p className="text-sm text-[#1F2937]/90 leading-relaxed font-normal mb-6 italic">
+                <p className="text-sm text-[#2A1710]/90 leading-relaxed font-normal mb-6 italic">
                   "{t.comment}"
                 </p>
               </div>
 
-              <div className="pt-4 border-t border-[#1F2937]/10 space-y-3">
+              <div className="pt-4 border-t border-[#2A1710]/10 space-y-3">
                 <div className="flex items-center justify-between">
-                  <span className="text-[11px] font-bold text-[#FF6B35] bg-[#F2EDE7] px-2.5 py-1 rounded-full">
+                  <span className="text-[11px] font-bold text-[#8B4E2F] bg-[#E6D2BD] px-2.5 py-1 rounded-full">
                     Favorite: {t.favoriteBean}
                   </span>
-                  <div className="flex items-center gap-1 text-[11px] text-[#1F2937]/70 font-medium">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#FF6B35]" />
+                  <div className="flex items-center gap-1 text-[11px] text-[#2A1710]/70 font-medium">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#8B4E2F]" />
                     <span>Verified Buyer</span>
                   </div>
                 </div>
@@ -107,15 +107,15 @@ export default function TestimonialsSection() {
                   <img
                     src={t.avatarUrl}
                     alt={t.author}
-                    className="w-10 h-10 rounded-full object-cover border-2 border-[#FFB703]"
+                    className="w-10 h-10 rounded-full object-cover border-2 border-[#C89B5C]"
                     referrerPolicy="no-referrer"
                   />
                   <div>
-                    <h4 className="font-serif text-sm font-bold text-[#1F2937]">
+                    <h4 className="font-serif text-sm font-bold text-[#2A1710]">
                       {t.author}
                     </h4>
-                    <span className="text-[11px] text-[#1F2937]/70 block">
-                      {t.role} · {t.location}
+                    <span className="text-[11px] text-[#2A1710]/70 block">
+                      {t.role} Â· {t.location}
                     </span>
                   </div>
                 </div>

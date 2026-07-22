@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+﻿import React, { useEffect, useState } from 'react';
 import { motion } from 'motion/react';
 
 export default function CustomCursor() {
@@ -63,12 +63,12 @@ export default function CustomCursor() {
       }}
     >
       <div
-        className={`w-full h-full rounded-full bg-[#FFB703] flex items-center justify-center transition-opacity duration-200 ${
+        className={`w-full h-full rounded-full bg-[#C89B5C] flex items-center justify-center transition-opacity duration-200 ${
           isHovered ? 'bg-opacity-80 shadow-lg' : 'bg-opacity-100'
         }`}
       >
         {hoverText && (
-          <span className="text-[10px] font-bold tracking-wider uppercase text-[#1F2937] whitespace-nowrap px-1">
+          <span className="text-[10px] font-bold tracking-wider uppercase text-[#2A1710] whitespace-nowrap px-1">
             {hoverText}
           </span>
         )}
