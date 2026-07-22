@@ -1,4 +1,4 @@
-﻿import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Lenis from 'lenis';
 import CustomCursor from './components/CustomCursor';
 import Navbar from './components/Navbar';
@@ -95,7 +95,7 @@ export default function App() {
   const totalCartCount = cartItems.reduce((sum, item) => sum + item.quantity, 0);
 
   return (
-    <div className="min-h-screen bg-[#EFE3D2] text-[#2A1710] relative selection:bg-[#C89B5C]">
+    <div className="min-h-screen bg-coffee-cream text-coffee-espresso relative selection:bg-coffee-caramel">
       {/* Paper Grain Texture Overlay */}
       <div className="grain-overlay" />
 

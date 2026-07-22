@@ -1,15 +1,26 @@
-﻿@import "tailwindcss";
+@import "tailwindcss";
+
+@theme {
+  --color-coffee-espresso: #2A1710;
+  --color-coffee-roasted: #8B4E2F;
+  --color-coffee-caramel: #C89B5C;
+  --color-coffee-cream: #EFE3D2;
+  --color-coffee-milk: #F9F1E7;
+  --color-coffee-latte: #E6D2BD;
+  --color-coffee-muted: #8A6A55;
+  --color-coffee-glass: rgba(255, 255, 255, 0.6);
+}
 
 @layer base {
   :root {
-    --bg-main: #EFE3D2;
-    --bg-surface: #F9F1E7;
-    --bg-card: #E6D2BD;
-    --primary: #8B4E2F;
-    --secondary: #C89B5C;
-    --text-dark: #2A1710;
-    --muted: #8A6A55;
-    --glass: rgba(255,255,255,0.6);
+    --bg-main: var(--color-coffee-cream);
+    --bg-surface: var(--color-coffee-milk);
+    --bg-card: var(--color-coffee-latte);
+    --primary: var(--color-coffee-roasted);
+    --secondary: var(--color-coffee-caramel);
+    --text-dark: var(--color-coffee-espresso);
+    --muted: var(--color-coffee-muted);
+    --glass: var(--color-coffee-glass);
   }
 
   html, body, #root {

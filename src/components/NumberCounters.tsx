@@ -1,4 +1,4 @@
-﻿import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { motion, useInView } from 'motion/react';
 import { HERO_STATS } from '../data/mockData';
 
@@ -38,13 +38,13 @@ function AnimatedCounter({ value, suffix, label }: { value: number; suffix: stri
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-50px' }}
       transition={{ duration: 0.6, ease: [0.215, 0.61, 0.355, 1] }}
-      className="text-center p-6 rounded-2xl bg-[#F9F1E7] border border-[#E6D2BD] soft-shadow"
+      className="text-center p-6 rounded-2xl bg-coffee-milk border border-coffee-latte soft-shadow"
     >
-      <div className="font-serif text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#8B4E2F] tracking-tight mb-2">
+      <div className="font-serif text-3xl sm:text-4xl lg:text-5xl font-extrabold text-coffee-roasted tracking-tight mb-2">
         {displayValue}
         <span>{suffix}</span>
       </div>
-      <p className="text-xs sm:text-sm font-semibold text-[#2A1710]/90 uppercase tracking-wider">
+      <p className="text-xs sm:text-sm font-semibold text-coffee-espresso/90 uppercase tracking-wider">
         {label}
       </p>
     </motion.div>
@@ -53,7 +53,7 @@ function AnimatedCounter({ value, suffix, label }: { value: number; suffix: stri
 
 export default function NumberCounters() {
   return (
-    <section id="stats-section" className="py-16 bg-[#E6D2BD] border-y border-[#F9F1E7]">
+    <section id="stats-section" className="py-16 bg-coffee-latte border-y border-coffee-milk">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {HERO_STATS.map((stat, i) => (

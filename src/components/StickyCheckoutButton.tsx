@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ShoppingBag, ArrowRight } from 'lucide-react';
 import { CartItem } from '../types';
@@ -24,18 +24,18 @@ export default function StickyCheckoutButton({ cartItems, onOpenCart }: StickyCh
       >
         <button
           onClick={onOpenCart}
-          className="group flex items-center gap-3 px-6 py-3.5 rounded-full bg-[#8B4E2F] text-white font-bold text-sm shadow-xl hover:bg-[#C89B5C] hover:text-[#2A1710] transition-all duration-300 border-2 border-[#F9F1E7] glow-pulse"
+          className="group flex items-center gap-3 px-6 py-3.5 rounded-full bg-coffee-roasted text-white font-bold text-sm shadow-xl hover:bg-coffee-caramel hover:text-coffee-espresso transition-all duration-300 border-2 border-coffee-milk glow-pulse"
           data-cursor
           data-cursor-text="Checkout"
         >
           <div className="relative">
             <ShoppingBag className="w-5 h-5" />
-            <span className="absolute -top-2 -right-2 w-4 h-4 rounded-full bg-[#2A1710] text-white text-[10px] font-extrabold flex items-center justify-center">
+            <span className="absolute -top-2 -right-2 w-4 h-4 rounded-full bg-coffee-espresso text-white text-[10px] font-extrabold flex items-center justify-center">
               {totalCount}
             </span>
           </div>
 
-          <span>Checkout Â· ${totalAmount.toFixed(2)}</span>
+          <span>Checkout · ${totalAmount.toFixed(2)}</span>
 
           <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
         </button>
