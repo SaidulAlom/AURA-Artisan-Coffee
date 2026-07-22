@@ -1,0 +1,15 @@
+{
+  "name": "Aura Artisan Coffee",
+  "short_name": "AuraCoffee",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F7F3EE",
+  "theme_color": "#F7F3EE",
+  "icons": [
+    {
+      "src": "/assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

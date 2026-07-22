@@ -1,0 +1,6 @@
+{
+  "name": "Aura Artisan Coffee",
+  "description": "Modern artisanal coffee and food brand with interactive 3D product preview, smooth motion, and curated coffee blends.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
