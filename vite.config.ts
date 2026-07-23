@@ -23,17 +23,7 @@ export default defineConfig(() => {
       sourcemap: false,
       chunkSizeWarningLimit: 600,
       assetsInlineLimit: 4096,
-      rollupOptions: {
-        output: {
-          manualChunks(id: string) {
-            if (id.includes('node_modules')) {
-              if (id.includes('three') || id.includes('@react-three')) return 'three-vendor';
-              if (id.includes('react') || id.includes('react-dom')) return 'react-vendor';
-              return 'vendor';
-            }
-          }
-        }
-      }
+
     }
   };
 });
